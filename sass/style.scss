@@ -80,7 +80,8 @@ li{
     .btn__nav{
         display: flex;
         width: 300px;
-        background:$backgound-color;
+        background-color:$backgound-color;
+        box-shadow:1px 3px 5px $header;
         border: none;
         padding: 20px;
         border-radius: 13px;
@@ -109,3 +110,42 @@ li{
     margin-right: 20px;
     color:darken($backgound-color, $amount: 40%);
 }
+section{
+    background-color: $backgound-color;
+    width: 100;
+    min-width: 375px;
+}
+.card__restaurant{
+    margin: 5%;
+    width: 90%;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+}
+
+.img__restaurant{
+    height: 170px;
+    overflow: hidden;
+}
+
+.img__restaurant--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.name__restaurant{
+    display:flex;
+    flex-direction: column;
+    h3{margin: 10px 0px 5px 10px}
+    p{  font-weight: 300;
+        margin: 0px 0px 5px 10px;}
+}
+.heart{
+    font-weight: 300;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    }

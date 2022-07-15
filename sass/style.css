@@ -134,7 +134,8 @@ li {
 li .btn__nav {
   display: flex;
   width: 300px;
-  background: #f6f6f6;
+  background-color: #f6f6f6;
+  box-shadow: 1px 3px 5px #dddddd;
   border: none;
   padding: 20px;
   border-radius: 13px;
@@ -164,4 +165,53 @@ li .btn__nav:hover .btn__nav--icon {
   margin-left: 10px;
   margin-right: 20px;
   color: #909090;
+}
+
+section {
+  background-color: #f6f6f6;
+  width: 100;
+  min-width: 375px;
+}
+
+.card__restaurant {
+  margin: 5%;
+  width: 90%;
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+}
+
+.img__restaurant {
+  height: 170px;
+  overflow: hidden;
+}
+
+.img__restaurant--img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.name__restaurant {
+  display: flex;
+  flex-direction: column;
+}
+.name__restaurant h3 {
+  margin: 10px 0px 5px 10px;
+}
+.name__restaurant p {
+  font-weight: 300;
+  margin: 0px 0px 5px 10px;
+}
+
+.heart {
+  font-weight: 300;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }/*# sourceMappingURL=style.css.map */
