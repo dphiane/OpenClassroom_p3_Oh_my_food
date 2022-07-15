@@ -47,9 +47,17 @@ td, th {
   font-family: Shrikhand;
   src: url(Shrikhand-Regular.ttf);
 }
-body {
-  font-family: roboto;
-  font-size: 18px;
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover, a:visited:hover {
+  cursor: pointer;
 }
 
 header {
@@ -63,18 +71,15 @@ header .logo {
   width: 60%;
 }
 
-button {
+.btn__location {
   width: 100%;
   height: 60px;
-  font-size: 18px;
   margin-top: 15px;
   box-shadow: inset 0px 8px 5px -9px rgba(0, 0, 0, 0.38);
-  background-color: #dddddd;
-  font-family: roboto;
-  font-weight: bold;
+  background: #e9e9e9;
   border: none;
 }
-button .localisation {
+.btn__location .localisation {
   margin-right: 20px;
 }
 
@@ -86,15 +91,77 @@ button .localisation {
   background-color: #f6f6f6;
 }
 
+button {
+  font-weight: 500;
+}
+
 h1 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 10px;
 }
 
-p {
+.header__explor--p {
   width: 100%;
   text-align: center;
+  padding: 20px;
+  font-weight: 300;
+}
+
+.header__explor--btn {
+  border-radius: 30px;
+  padding: 15px 25px 15px 25px;
+  color: white;
+  background: linear-gradient(180deg, rgb(236, 114, 218) 0%, rgb(147, 86, 220) 135%);
+  border: none;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300, bold;
+}
+li .btn__nav {
+  display: flex;
+  width: 300px;
+  background: #f6f6f6;
+  border: none;
+  padding: 20px;
+  border-radius: 13px;
+  margin-left: -10px;
+}
+li .btn__nav:hover {
+  background-color: #efe6fa;
+}
+li .btn__nav:hover .btn__nav--icon {
+  color: #9356dc;
+}
+
+.numbers__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.btn__nav--icon {
+  margin-left: 10px;
+  margin-right: 20px;
+  color: #909090;
 }/*# sourceMappingURL=style.css.map */

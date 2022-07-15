@@ -7,12 +7,13 @@ $tertiary-color:#99e2d0;
 
 @mixin font-size-bold{
     font-size: 24px;
-    font-weight: bold;}
+    font-weight:500;}
 
-$font-size:18px;
+$font-size:14px;
 
 @mixin margin-l-r {
     margin-left: 20%;
     margin-right: 20%;
     
 }
+
