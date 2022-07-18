@@ -43,32 +43,25 @@ td, th {
   padding: 0;
 }
 
-@font-face {
-  font-family: Shrikhand;
-  src: url(Shrikhand-Regular.ttf);
-}
 * {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
 }
 
 a, a:visited {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
-a:hover, a:visited:hover {
-  cursor: pointer;
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 header {
   margin-top: 7%;
   margin-bottom: 4%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header .logo {
-  width: 60%;
 }
 
 .btn__location {
@@ -84,6 +77,7 @@ header .logo {
 }
 
 .header__explor {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,13 +95,14 @@ h1 {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .header__explor--p {
-  width: 100%;
   text-align: center;
-  padding: 20px;
   font-weight: 300;
+  padding: 0px 15px 30px 15px;
 }
 
 .header__explor--btn {
@@ -116,24 +111,27 @@ h1 {
   color: white;
   background: linear-gradient(180deg, rgb(236, 114, 218) 0%, rgb(147, 86, 220) 135%);
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 25%;
 }
 
 h2 {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 5%;
 }
 
 li {
-  margin-bottom: 20px;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-bottom: 5%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
   font-weight: 300, bold;
 }
 li .btn__nav {
   display: flex;
-  width: 300px;
+  width: 90%;
   background-color: #f6f6f6;
   box-shadow: 1px 3px 5px #dddddd;
   border: none;
@@ -169,14 +167,22 @@ li .btn__nav:hover .btn__nav--icon {
 
 section {
   background-color: #f6f6f6;
-  width: 100;
+  margin-top: 15%;
+  padding-bottom: 10%;
+  width: 100%;
   min-width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 .card__restaurant {
   margin: 5%;
   width: 90%;
-  height: 230px;
+  height: 250px;
   position: relative;
   overflow: hidden;
   border-radius: 15px 15px 15px 15px;
@@ -184,17 +190,22 @@ section {
 }
 
 .img__restaurant {
-  height: 170px;
+  height: 180px;
   overflow: hidden;
 }
 
 .img__restaurant--img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+}
+
+.img__restaurant--img--la-note-enchantee {
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
 }
 
 .name__restaurant {
@@ -209,9 +220,49 @@ section {
   margin: 0px 0px 5px 10px;
 }
 
-.heart {
-  font-weight: 300;
+.btn__heart {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
+}
+
+.nouveau {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #278870;
+  background-color: #99e2d0;
+}
+
+/*Footer */
+footer {
+  background-color: #353535;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+footer ul li {
+  margin: 15px;
+}
+
+.logo__bottom {
+  margin: 15px 0px 5px 15px;
+  font-family: "Shrikhand", cursive;
+}
+
+.icon__footer {
+  margin-right: 10px;
+}
+
+.icon__footer--2 {
+  margin-right: 5px;
 }/*# sourceMappingURL=style.css.map */

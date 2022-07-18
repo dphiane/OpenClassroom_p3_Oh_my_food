@@ -1,4 +1,4 @@
-$footer:#332d2c;
+$footer:#353535;
 $header:#dddddd;
 $backgound-color:#f6f6f6;
 $primary-color:#9356dc;
@@ -9,11 +9,17 @@ $tertiary-color:#99e2d0;
     font-size: 24px;
     font-weight:500;}
 
-$font-size:14px;
+$font-size:18px;
+$font-weight-300:300;
 
 @mixin margin-l-r {
-    margin-left: 20%;
-    margin-right: 20%;
-    
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+@mixin margin-h2 {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 

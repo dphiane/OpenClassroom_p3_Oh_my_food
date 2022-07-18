@@ -1,28 +1,25 @@
 @import "libs/reset.scss";
 @import "libs/utils.scss";
-@font-face {
-    font-family: Shrikhand;
-    src: url(Shrikhand-Regular.ttf);
-}
+
 *{
     font-family: 'Roboto', sans-serif;
-    font-size: $font-size;
 }
 
 a, a:visited{
     text-decoration: none;
-    color: black;
-    &:hover{cursor: pointer;}
+    color: inherit;
 }
 
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
 header{
     margin-top: 7%;
     margin-bottom: 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .logo{
-        width: 60%;}
+
 }
 .btn__location{
     width: 100%;
@@ -37,6 +34,7 @@ header{
 }
 
 .header__explor{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,11 +50,13 @@ h1{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 10px;
+    @include margin-l-r;
 }
-.header__explor--p{  width: 100%;
+.header__explor--p{ 
     text-align: center;
-    padding: 20px;
-    font-weight: 300;
+    font-weight: $font-weight-300;
+    padding: 0px 15px 30px 15px;
+
 }
 
 .header__explor--btn{
@@ -65,21 +65,23 @@ h1{
     color: white;
     background: linear-gradient(180deg, rgba(236,114,218,1) 0%, rgba(147,86,220,1) 135%);
     border: none;
-    margin-bottom: 40px;
+    margin-bottom: 25%;
 }
 h2{
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 5%; 
 }
+
 li{ 
-    margin-bottom: 20px;
+    @include margin-h2;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight:300,bold;
+    margin-bottom: 20px;
+    font-weight:$font-weight-300,bold;
     .btn__nav{
         display: flex;
-        width: 300px;
+        width: 90%;
         background-color:$backgound-color;
         box-shadow:1px 3px 5px $header;
         border: none;
@@ -112,13 +114,22 @@ li{
 }
 section{
     background-color: $backgound-color;
-    width: 100;
+    margin-top: 15%;
+    padding-bottom: 10%;
+    width: 100%;
     min-width: 375px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h3{
+    font-size:$font-size;
 }
 .card__restaurant{
     margin: 5%;
     width: 90%;
-    height: 230px;
+    height: 250px;
     position: relative;
     overflow: hidden;
     border-radius: 15px 15px 15px 15px;
@@ -126,26 +137,68 @@ section{
 }
 
 .img__restaurant{
-    height: 170px;
+    height: 180px;
     overflow: hidden;
 }
 
 .img__restaurant--img{
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: bottom;
+}
+.img__restaurant--img--la-note-enchantee{
+    object-position: 50% 60%;
 }
 .name__restaurant{
     display:flex;
     flex-direction: column;
     h3{margin: 10px 0px 5px 10px}
-    p{  font-weight: 300;
+    p{font-weight: $font-weight-300;
         margin: 0px 0px 5px 10px;}
 }
-.heart{
-    font-weight: 300;
+
+.btn__heart{
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
-    }
+}
+
+
+.nouveau{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: 80px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: darken($color: $tertiary-color, $amount: 40);
+    background-color: $tertiary-color;
+}
+
+
+/*Footer */
+
+footer{
+    background-color: $footer;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    ul li{margin: 15px;}
+}
+
+.logo__bottom{
+    margin:15px 0px 5px 15px;
+    font-family: 'Shrikhand', cursive;}
+
+.icon__footer{
+    margin-right: 10px;}
+
+.icon__footer--2{
+    margin-right: 5px;}
