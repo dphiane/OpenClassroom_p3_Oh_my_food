@@ -220,12 +220,6 @@ h3 {
   margin: 0px 0px 5px 10px;
 }
 
-.btn__heart {
-  position: absolute;
-  bottom: 30px;
-  right: 20px;
-}
-
 .nouveau {
   display: flex;
   align-items: center;
@@ -239,6 +233,23 @@ h3 {
   border-radius: 3px;
   color: #278870;
   background-color: #99e2d0;
+}
+
+.btn__heart {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+.fa-heart::before {
+  content: "\f004";
+  z-index: -1;
+  transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
+  color: #9356dc;
+  z-index: 1;
 }
 
 /*Footer */
