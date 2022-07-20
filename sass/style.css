@@ -222,16 +222,15 @@ h3 {
   -o-object-position: 50% 60%;
      object-position: 50% 60%;
 }
-.img__restaurant--img--la-note-enchantee .name__restaurant {
+
+.name__restaurant {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+  padding-left: 15px;
 }
-.img__restaurant--img--la-note-enchantee .name__restaurant h3 {
-  margin: 10px 0px 5px 10px;
-}
-.img__restaurant--img--la-note-enchantee .name__restaurant p {
+.name__restaurant p {
   font-weight: 300;
-  margin: 0px 0px 5px 10px;
 }
 
 .nouveau {

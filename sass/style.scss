@@ -150,15 +150,15 @@ h3{
     object-position: bottom;
 }
 .img__restaurant--img--la-note-enchantee{
-    object-position: 50% 60%;
-    .name__restaurant{
+    object-position: 50% 60%;}
+.name__restaurant{
     display:flex;
     flex-direction: column;
-    h3{margin: 10px 0px 5px 10px}
-    p{font-weight: $font-weight-300;
-        margin: 0px 0px 5px 10px;}
-}
-}
+    margin-top: 10px;
+    padding-left: 15px;
+    p{font-weight: $font-weight-300;}}
+
+
 .nouveau{
     display: flex;
     align-items: center;
