@@ -175,39 +175,40 @@ h3{
 }
 .btn__heart{
     position: absolute;
-    width: 20px;
-    height: 20px;
-    bottom: 30px;
-    right: 40px;   
+    width: 35px;
+    height: 35px;
+    bottom: 15px;
+    right: 20px;
+
 }
 .heart__fill{
+    font-size: 25px;
     z-index: 0;
     top: 0;
     left: 0;
+    bottom: 0;
     position: absolute;
     color: transparent;
     opacity: 0;
-    line-height: 1;
     background-clip: text;
     -webkit-background-clip: text;
     @include linear-gradient;
-    transform:translateY(1) ;
-    transition: all 3s;
+    transform: scale(1.1);
+    transition: all 2s;
     &:hover{
         opacity: 1;
         z-index: 1;
     }
 } 
-
-
 .heart__empty{
-    left: 0;
-    top: 0;
-    line-height: 1;
-    z-index: 1;
+    font-size: 25px;
+    position: absolute;
+    &:hover{
+        opacity: 0;
+        z-index: 0;
+    }
 }
-
-/*Footer */
+    /*Footer */
 
 footer{
     background-color: $footer;

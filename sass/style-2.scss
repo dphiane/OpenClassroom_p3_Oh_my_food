@@ -1,0 +1,166 @@
+@import "libs/reset.scss";
+@import "libs/utils.scss";
+
+*{  box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    width: 40%;
+    margin: auto;
+}
+header{
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+.return__arrow{
+    color: $footer;
+    position: relative;
+    left: 25px;
+}
+.like__h1{
+    display: flex;
+    align-items: center;
+}
+.img__restaurant{
+    width:100%;
+    height: 270px;
+    object-fit: cover;
+}
+.fa-heart{
+    margin-left: 70px;
+}
+.section__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $backgound-color;
+    border-radius: 30px 30px 0px 0px ;
+    margin-top: -55px;
+    padding-top: 30px;
+    position: relative;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 24px;
+    margin-left: 3%;
+}
+h2{
+    margin-left: 3%;
+    font-weight:$font-weight-300;
+    text-transform: uppercase;
+    
+}
+.border__bottom{
+    padding-bottom: 5px;
+    border-bottom: 3px solid $tertiary-color;
+    width: 40px;
+    margin-top: 20px;
+    margin-left:3% ;
+}
+h3{
+    padding-top:10px;
+    padding-left: 10px;
+}
+p{
+    font-weight:$font-weight-300 ;
+    font-size: $font-size-menu;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+.box__food{
+    background-color: white;
+    border: none;
+    width: 350px;
+    border-radius: 15px;
+    margin: 3%;
+    @include box-shadow-black;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.price__bold{
+    font-weight: 500;
+    width: 50px;
+    right: 15px;
+    bottom: 1px;
+}
+
+.checkbox{
+    color: white;
+    background-color: $tertiary-color;
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.box__food__link{
+    width: 100%;
+    display: flex;
+    &:hover{display: flex;}
+}
+.fa-circle-check{
+    font-size: 25px;
+}
+
+.command__btn{
+    text-align: center;
+    width: 180px;
+    border-radius: 30px;
+    padding: 15px 25px 15px 25px;
+    color: white;
+    @include linear-gradient;
+    border: none;
+    margin-bottom: 25%;
+    @include box-shadow-black;
+    &:hover{
+        opacity: 0.80;
+    }
+}
+
+.command__box{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Footer */
+
+footer{
+    background-color: $footer;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    ul li{
+        margin: 15px;}
+}
+
+.logo__bottom{
+    margin:15px 0px 5px 15px;
+    font-family: 'Shrikhand', cursive;}
+
+.icon__footer{
+    margin-right: 10px;}
+
+.icon__footer--2{
+    margin-right: 5px;}
