@@ -63,9 +63,12 @@ h1{
     border-radius: 30px;
     padding: 15px 25px 15px 25px;
     color: white;
-    background: linear-gradient(180deg, rgba(236,114,218,1) 0%, rgba(147,86,220,1) 135%);
+    @include linear-gradient;
     border: none;
     margin-bottom: 25%;
+    &:hover{
+        @include box-shadow;
+    }
 }
 h2{
     margin-top: 10%;
@@ -120,7 +123,6 @@ section{
     min-width: 375px;
     display: flex;
     flex-direction: column;
-
 }
 
 h3{
@@ -149,15 +151,14 @@ h3{
 }
 .img__restaurant--img--la-note-enchantee{
     object-position: 50% 60%;
-}
-.name__restaurant{
+    .name__restaurant{
     display:flex;
     flex-direction: column;
     h3{margin: 10px 0px 5px 10px}
     p{font-weight: $font-weight-300;
         margin: 0px 0px 5px 10px;}
 }
-
+}
 .nouveau{
     display: flex;
     align-items: center;
@@ -174,18 +175,37 @@ h3{
 }
 .btn__heart{
     position: absolute;
-    right: 20px;
-    bottom: 30px;}
-
-.fa-heart::before {
-        content: "\f004";
-        z-index: -1;
-        transition: color 1s ease-out;
-    }
-.fa-heart:hover::before{
-        color: $primary-color;
+    width: 20px;
+    height: 20px;
+    bottom: 30px;
+    right: 40px;   
+}
+.heart__fill{
+    z-index: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    line-height: 1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    @include linear-gradient;
+    transform:translateY(1) ;
+    transition: all 3s;
+    &:hover{
+        opacity: 1;
         z-index: 1;
     }
+} 
+
+
+.heart__empty{
+    left: 0;
+    top: 0;
+    line-height: 1;
+    z-index: 1;
+}
 
 /*Footer */
 
@@ -196,7 +216,8 @@ footer{
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-    ul li{margin: 15px;}
+    ul li{
+        margin: 15px;}
 }
 
 .logo__bottom{
