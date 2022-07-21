@@ -284,6 +284,11 @@ p {
           animation-delay: 4s;
 }
 
+.box__food--10 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
 .box__food:hover .checkbox, .box__food:active .checkbox {
   transform: translateX(0%);
   z-index: 1;
