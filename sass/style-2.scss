@@ -49,6 +49,7 @@ nav{
     margin-top: -55px;
     padding-top: 30px;
     position: relative;
+
 }
 
 h1{
@@ -91,9 +92,13 @@ p{
     @include box-shadow-black;
     display: flex;
     overflow: hidden;
-    
+    position: relative;
 }
 
+.box__food:hover .checkbox{
+    transform: translateX(0px);
+    z-index: 1;
+}
 .price__bold{
     font-weight: 500;
     width: 50px;
@@ -102,20 +107,24 @@ p{
 }
 
 .checkbox{
+    position: absolute;
+    z-index: -1;
     color: white;
     background-color: $tertiary-color;
-    width:20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
-
+    width: 70px;
+    height: 100%;
+    right: 0px;
+    bottom: 0;
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out;
 }
 
 .box__food__link{
     width: 100%;
     display: flex;
-    &:hover{display: flex;}
 }
 .fa-circle-check{
     font-size: 25px;
