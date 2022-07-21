@@ -95,10 +95,11 @@ p{
     position: relative;
 }
 
-.box__food:hover .checkbox{
-    transform: translateX(0px);
+.box__food:hover .checkbox, .box__food:active .checkbox{
+    transform: translateX(0%);
     z-index: 1;
-}
+    }
+
 .price__bold{
     font-weight: 500;
     width: 50px;
@@ -119,7 +120,7 @@ p{
     right: 0px;
     bottom: 0;
     transform: translateX(100%);
-    transition: transform 1s ease-in-out;
+    transition: all 1s;
 }
 
 .box__food__link{
@@ -128,6 +129,14 @@ p{
 }
 .fa-circle-check{
     font-size: 25px;
+}
+@keyframes roll{
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.box__food:hover .fa-circle-check, .box__food:active .fa-circle-check{
+    animation: roll 1s;
 }
 
 .command__btn{
