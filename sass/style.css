@@ -140,7 +140,7 @@ li {
   margin-left: 0px;
   max-width: 450px;
   min-width: 350px;
-  font-weight: 300, bold;
+  font-weight: 300;
 }
 li .btn__nav {
   display: flex;
