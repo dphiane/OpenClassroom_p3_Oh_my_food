@@ -59,8 +59,38 @@ nav{
     height: 270px;
     object-fit: cover;
 }
-.fa-heart{
-    margin-left: 70px;
+.btn__heart{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 40px;
+}
+.heart__fill{
+    font-size: 25px;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    @include linear-gradient;
+    transform: scale(1.1);
+    transition: all 2s;
+    &:hover{
+        opacity: 1;
+        z-index: 1;
+    }
+} 
+.heart__empty{
+    font-size: 25px;
+    position: absolute;
+    &:hover{
+        opacity: 0;
+        z-index: 0;
+    }
 }
 .section__menu{
     display: flex;
@@ -74,6 +104,7 @@ nav{
 }
 
 h1{
+    position: relative;
     font-family: 'Shrikhand', cursive;
     font-size: 24px;
     margin-left: 3%;
@@ -106,7 +137,6 @@ p{
 .box__food{
     background-color: white;
     border: none;
-    width: 90%;
     border-radius: 15px;
     margin: 3%;
     @include box-shadow-black;
