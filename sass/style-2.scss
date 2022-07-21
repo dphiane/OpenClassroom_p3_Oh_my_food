@@ -4,7 +4,29 @@
 *{  box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+.loader {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes loading-spinner {
+    0%{
+        color: $primary-color;
+        text-shadow: 0 0 7px $secondary-color;
+    }
+    90%{
+        color: aquamarine;
+        text-shadow: none;
+    }
+    100%{
+        color: $primary-color;
+        text-shadow: 0 0 7px $secondary-color;
+    }
+    
+}
 a, a:visited{
     text-decoration: none;
     color: inherit;
@@ -49,7 +71,6 @@ nav{
     margin-top: -55px;
     padding-top: 30px;
     position: relative;
-
 }
 
 h1{
@@ -86,14 +107,36 @@ p{
 .box__food{
     background-color: white;
     border: none;
-    width: 350px;
+    width: 90%;
     border-radius: 15px;
     margin: 3%;
     @include box-shadow-black;
     display: flex;
     overflow: hidden;
     position: relative;
+    animation: slide-up 2s both;
+    transition: all 0.5s;
+    opacity: 0;
 }
+@keyframes slide-up{
+    0%{
+        transform: translateY(100%);
+        
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+.box__food--1{animation-delay: 0s;}
+.box__food--2{animation-delay: 0.5s;}
+.box__food--3{animation-delay: 1s;}
+.box__food--4{animation-delay: 1.5s;}
+.box__food--5{animation-delay: 2s;}
+.box__food--6{animation-delay: 2.5s;}
+.box__food--7{animation-delay: 3s;}
+.box__food--8{animation-delay: 3.5s;}
+.box__food--9{animation-delay: 4s;}
 
 .box__food:hover .checkbox, .box__food:active .checkbox{
     transform: translateX(0%);
