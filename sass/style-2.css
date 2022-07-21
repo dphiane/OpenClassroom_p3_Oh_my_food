@@ -377,7 +377,8 @@ p {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 2px;
 }
 .command__btn:hover {
-  opacity: 0.8;
+  box-shadow: #353535 0px 3px 3px;
+  opacity: 0.9;
 }
 
 .command__box {

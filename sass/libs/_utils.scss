@@ -33,3 +33,8 @@ $font-size-menu:14px;
 @mixin box-shadow-black{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 2px;
 }
+
+@mixin box-shadow-btn {
+    box-shadow: #353535 0px 3px 3px;
+    opacity: 0.9;   
+}

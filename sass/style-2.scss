@@ -239,7 +239,7 @@ p{
     margin-bottom: 25%;
     @include box-shadow-black;
     &:hover{
-        opacity: 0.80;
+        @include box-shadow-btn;
     }
 }
 

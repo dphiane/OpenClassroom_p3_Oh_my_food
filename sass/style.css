@@ -114,7 +114,8 @@ h1 {
   margin-bottom: 25%;
 }
 .header__explor--btn:hover {
-  box-shadow: 0px 2px 5px #ff79da;
+  box-shadow: #353535 0px 3px 3px;
+  opacity: 0.9;
 }
 
 h2 {
@@ -190,6 +191,7 @@ h3 {
   overflow: hidden;
   border-radius: 15px 15px 15px 15px;
   background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 2px;
 }
 
 .img__restaurant {
