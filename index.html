@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" media="all and (min-width: 768px)" href="sass/tablette-desktop.css" /> <!-- Pour ceux qui ont une résolution supérieur à 768px -->
     <script src="https://kit.fontawesome.com/26b2a5bc8a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,15 +25,19 @@
 
     <nav>
         <h2>Fonctionnement</h2>
-        <ul>
-            <li><span class="numbers__nav">1</span><a href="#" class="btn__nav"><span class="btn__nav--icon"><i class="fa-solid fa-mobile-screen-button"></i></span>Choisissez un restaurant</a></li>
-            <li><span class="numbers__nav">2</span><a href="#" class="btn__nav"><span class="btn__nav--icon"><i class="fa-solid fa-list"></i></span>Composez votre menu</a></li>
-            <li><span class="numbers__nav">3</span><a href="#" class="btn__nav"><span class="btn__nav--icon"><i class="fa-solid fa-store"></i></span>Dégustez au restaurant</a></li>
+            <div class="nav">
+                <ul>
+                    <li><span class="numbers__nav">1</span><a href="#" class="btn__nav"><span class="btn__nav--icon"><i class="fa-solid fa-mobile-screen-button"></i></span>Choisissez un restaurant</a></li>
+                    <li><span class="numbers__nav">2</span><a href="#" class="btn__nav"><span class="btn__nav--icon"><i class="fa-solid fa-list"></i></span>Composez votre menu</a></li>
+                    <li><span class="numbers__nav">3</span><a href="#" class="btn__nav"><span class="btn__nav--icon"><i class="fa-solid fa-store"></i></span>Dégustez au restaurant</a></li>
         </ul>
+        </div>
     </nav>
     <main>
         <section>
             <h2>Restaurants</h2>
+
+        <div class="section__restaurant">
 
             <div class="card__restaurant">
                 <a href="La-palette-du-gout.html">
@@ -75,7 +80,7 @@
                             <div class="btn__heart"><a href="#"><i class="heart__empty fa-regular fa-heart"></i><i class="heart__fill fa-solid fa-heart"></i></i></a></div>
                 </a>
             </div>
-
+        </div>
         </section>
     </main>
     <footer>

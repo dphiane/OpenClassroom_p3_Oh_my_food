@@ -120,8 +120,14 @@ h1 {
 
 h2 {
   margin-top: 10%;
-  margin-bottom: 5%;
   margin-left: 5%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
@@ -131,6 +137,9 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  margin-left: 0px;
+  max-width: 450px;
+  min-width: 350px;
   font-weight: 300, bold;
 }
 li .btn__nav {
@@ -179,6 +188,13 @@ section {
   flex-direction: column;
 }
 
+.section__restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h3 {
   font-size: 18px;
 }
@@ -186,6 +202,7 @@ h3 {
 .card__restaurant {
   margin: 5%;
   width: 90%;
+  max-width: 400px;
   height: 250px;
   position: relative;
   overflow: hidden;
