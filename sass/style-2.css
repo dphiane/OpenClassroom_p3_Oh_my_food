@@ -259,9 +259,32 @@ p {
 
 .price__bold {
   font-weight: 500;
-  width: 50px;
+}
+
+.price__box {
+  height: 50%;
+  position: absolute;
+  bottom: 3px;
   right: 15px;
-  bottom: 1px;
+  transition: all 1s;
+}
+
+.box__food:hover .price__box, .box__food:active .price__box {
+  transform: translateX(-70px);
+}
+
+.text__box {
+  width: 75%;
+  transition: all 1s;
+}
+.text__box h3, .text__box p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.box__food:hover .text__box, .box__food:active .text__box {
+  width: 60%;
 }
 
 .checkbox {
@@ -280,7 +303,7 @@ p {
   transition: all 1s;
 }
 
-.box__food__link {
+.link__box {
   width: 100%;
   display: flex;
 }
