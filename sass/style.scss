@@ -4,7 +4,46 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-
+.loader__wrapper{
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+    inset: 0;
+    opacity: 0.8;
+    background-color: $header;
+    animation: disappear 1s forwards;
+    animation-delay: 1s;
+}
+@keyframes disappear {
+to{
+    opacity: 0;
+    z-index: -2;
+    }
+}
+.loader {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    border:solid 5px;
+    border-radius: 50%;
+    border-left: none;
+    border-right: none;
+    animation: loading-spinner 1.5s linear forwards;
+}
+@keyframes loading-spinner {
+    0%{
+        transform: rotate(0deg);
+        border-top-color:$primary-color;
+        border-bottom-color: $secondary-color;
+    }     
+    100%{
+        transform: rotate(360deg) scale(0);
+        border-top-color:$primary-color;
+        border-bottom-color: $secondary-color;
+    }
+}
 a, a:visited{
     text-decoration: none;
     color: inherit;

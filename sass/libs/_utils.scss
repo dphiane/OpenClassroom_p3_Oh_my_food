@@ -5,14 +5,13 @@ $primary-color:#9356dc;
 $secondary-color:#ff79da;
 $tertiary-color:#99e2d0;
 
-        
-@mixin font-size-bold{
-    font-size: 24px;
-    font-weight:500;}
-
 $font-size:18px;
 $font-weight-300:300;
 $font-size-menu:14px;
+
+@mixin font-size-bold{
+    font-size: 24px;
+    font-weight:500;}
 
 @mixin margin-l-r {
     margin-left: 15%;

@@ -48,44 +48,6 @@ td, th {
   font-family: "Roboto", sans-serif;
 }
 
-.loader {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@-webkit-keyframes loading-spinner {
-  0% {
-    color: #9356dc;
-    text-shadow: 0 0 7px #ff79da;
-  }
-  90% {
-    color: aquamarine;
-    text-shadow: none;
-  }
-  100% {
-    color: #9356dc;
-    text-shadow: 0 0 7px #ff79da;
-  }
-}
-
-@keyframes loading-spinner {
-  0% {
-    color: #9356dc;
-    text-shadow: 0 0 7px #ff79da;
-  }
-  90% {
-    color: aquamarine;
-    text-shadow: none;
-  }
-  100% {
-    color: #9356dc;
-    text-shadow: 0 0 7px #ff79da;
-  }
-}
 a, a:visited {
   text-decoration: none;
   color: inherit;

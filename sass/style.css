@@ -47,6 +47,71 @@ td, th {
   font-family: "Roboto", sans-serif;
 }
 
+.loader__wrapper {
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  inset: 0;
+  opacity: 0.8;
+  background-color: #dddddd;
+  -webkit-animation: disappear 1s forwards;
+          animation: disappear 1s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes disappear {
+  to {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+
+@keyframes disappear {
+  to {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+.loader {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  border: solid 5px;
+  border-radius: 50%;
+  border-left: none;
+  border-right: none;
+  -webkit-animation: loading-spinner 1.5s linear forwards;
+          animation: loading-spinner 1.5s linear forwards;
+}
+
+@-webkit-keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: #9356dc;
+    border-bottom-color: #ff79da;
+  }
+  100% {
+    transform: rotate(360deg) scale(0);
+    border-top-color: #9356dc;
+    border-bottom-color: #ff79da;
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: #9356dc;
+    border-bottom-color: #ff79da;
+  }
+  100% {
+    transform: rotate(360deg) scale(0);
+    border-top-color: #9356dc;
+    border-bottom-color: #ff79da;
+  }
+}
 a, a:visited {
   text-decoration: none;
   color: inherit;

@@ -4,29 +4,7 @@
 *{  box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-.loader {
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@keyframes loading-spinner {
-    0%{
-        color: $primary-color;
-        text-shadow: 0 0 7px $secondary-color;
-    }
-    90%{
-        color: aquamarine;
-        text-shadow: none;
-    }
-    100%{
-        color: $primary-color;
-        text-shadow: 0 0 7px $secondary-color;
-    }
-    
-}
+
 a, a:visited{
     text-decoration: none;
     color: inherit;
