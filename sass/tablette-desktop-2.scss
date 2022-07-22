@@ -9,11 +9,13 @@ body{
 .img__restaurant{
     height: 350px;
 }
+/*ajout bouton retour pc et tablette*/
 .btn__return{
     display: inline-block;
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
 }
+/*aligmement des menus en cologne*/
 .section__menu{
     border-radius: 0;
 }
@@ -23,11 +25,10 @@ body{
     justify-content: space-around;
 }
 
-.h1__like{
-}
+/*centrage titre*/
 h1{margin: auto;
 }
-
+/*changement des tailles pour tablette et pc*/
 .starter{
     width: 30%;
 }
