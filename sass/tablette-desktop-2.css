@@ -1,3 +1,44 @@
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .logo {
   width: 20%;
+}
+
+.img__restaurant {
+  height: 350px;
+}
+
+.btn__return {
+  display: inline-block;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+}
+
+.section__menu {
+  border-radius: 0;
+}
+
+.section__menu--desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1 {
+  margin: auto;
+}
+
+.starter {
+  width: 30%;
+}
+
+.main__course {
+  width: 30%;
+}
+
+.dessert {
+  width: 30%;
 }/*# sourceMappingURL=tablette-desktop-2.css.map */

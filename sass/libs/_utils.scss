@@ -36,5 +36,10 @@ $font-size-menu:14px;
 
 @mixin box-shadow-btn {
     box-shadow: #353535 0px 3px 3px;
-    opacity: 0.9;   
+    opacity: 0.9;
+}
+
+@mixin box-shadow-card {
+    box-shadow: #353535 0px 10px 10px;
+    transition: all 0.5s;
 }

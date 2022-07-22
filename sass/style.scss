@@ -151,6 +151,9 @@ h3{
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     @include box-shadow-black;
+    &:hover{
+        @include box-shadow-card;
+    }
 }
 
 .img__restaurant{
