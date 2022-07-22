@@ -82,7 +82,7 @@ nav {
   display: none;
 }
 
-/*box titre + coeur */
+/*box titre + coeur animé*/
 .like__h1 {
   display: flex;
   align-items: center;
@@ -213,7 +213,7 @@ p {
     transform: translateY(0%);
     opacity: 1;
   }
-}
+} /*delay animation retardé*/
 .box__food--1 {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
@@ -282,11 +282,11 @@ p {
   transition: all 1s;
 }
 
-.box__food:hover .price__box, .box__food:active .price__box {
+.box__food:hover .price__box, .box__food:active .price__box { /*décalage du prix vers la gauche*/
   transform: translateX(-70px);
 }
 
-.text__box {
+.text__box { /*rogner du texte vers la gauche*/
   width: 75%;
   transition: all 1s;
 }
@@ -296,7 +296,7 @@ p {
   text-overflow: ellipsis;
 }
 
-.box__food:hover .text__box, .box__food:active .text__box {
+.box__food:hover .text__box, .box__food:active .text__box { /*taille de la boite pour rogner le texte*/
   width: 60%;
 }
 
