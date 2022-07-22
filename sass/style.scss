@@ -4,6 +4,12 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*loader spinner*/
 .loader__wrapper{
     position: fixed;
     height: 100vh;
@@ -14,12 +20,7 @@
     animation: disappear 1s forwards;
     animation-delay: 1s;
 }
-@keyframes disappear {
-to{
-    opacity: 0;
-    z-index: -2;
-    }
-}
+
 .loader {
     width: 120px;
     height: 120px;
@@ -32,6 +33,13 @@ to{
     border-right: none;
     animation: loading-spinner 1.5s linear forwards;
 }
+
+@keyframes disappear {
+    to{
+        opacity: 0;
+        z-index: -2;
+        }
+    }
 @keyframes loading-spinner {
     0%{
         transform: rotate(0deg);
@@ -44,11 +52,8 @@ to{
         border-bottom-color: $secondary-color;
     }
 }
-a, a:visited{
-    text-decoration: none;
-    color: inherit;
-}
 
+/*header */
 .logo{
     display: block;
     margin-left: auto;
@@ -58,8 +63,8 @@ a, a:visited{
 header{
     margin-top: 7%;
     margin-bottom: 4%;
-
 }
+/*bouton localisation*/
 .btn__location{
     width: 100%;
     height: 60px;
@@ -80,16 +85,17 @@ header{
     align-items: center;
     background-color:$backgound-color;
 }
-button{
-    font-weight: 500;
-}
-
+/*titre */
 h1{ 
     @include font-size-bold;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 10px;
     @include margin-l-r;
+}
+/*bouton explorer nos restaurants*/
+button{
+    font-weight: 500;
 }
 .header__explor--p{ 
     text-align: center;
@@ -108,10 +114,11 @@ h1{
         @include box-shadow-btn;
     }
 }
-h2{
+h2{/*titre fonctionnement et restaurants*/
     margin-top: 10%;
     margin-left: 5%; 
 }
+/*navigation et choix*/
 .nav{
     display: flex;
     flex-direction: column;
@@ -161,6 +168,7 @@ li{
     margin-right: 20px;
     color:darken($backgound-color, $amount: 40%);
 }
+/*section carte des restaurants*/
 section{
     background-color: $backgound-color;
     margin-top: 15%;
@@ -177,9 +185,10 @@ section{
     align-items: center;
 }
 
-h3{
+h3{/*noms des restaurants*/
     font-size:$font-size;
 }
+/*carte et images des restaurants*/
 .card__restaurant{
     margin: 5%;
     width: 90%;
@@ -215,7 +224,7 @@ h3{
     padding-left: 15px;
     p{font-weight: $font-weight-300;}}
 
-
+/*logo nouveau sur les cartes des restaurants*/
 .nouveau{
     display: flex;
     align-items: center;
@@ -230,6 +239,7 @@ h3{
     color: darken($color: $tertiary-color, $amount: 40);
     background-color: $tertiary-color;
 }
+/*bouton en coeur & hover linear gradient*/
 .btn__heart{
     position: absolute;
     width: 35px;
