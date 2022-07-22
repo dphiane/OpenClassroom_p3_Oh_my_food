@@ -210,7 +210,7 @@ li {
   margin-left: 0px;
   max-width: 450px;
   min-width: 350px;
-  font-weight: 300, bold;
+  font-weight: 16px;
 }
 li .btn__nav {
   display: flex;
@@ -222,7 +222,7 @@ li .btn__nav {
   border-radius: 13px;
   margin-left: -10px;
 }
-li .btn__nav:hover {
+li .btn__nav:hover { /*hover changement couleur linear gradient*/
   background-color: #efe6fa;
 }
 li .btn__nav:hover .btn__nav--icon {

@@ -134,7 +134,7 @@ li{
     margin-left: 0px;
     max-width: 450px;
     min-width: 350px;
-    font-weight:$font-weight-300,bold;
+    font-weight: 16px;;
     .btn__nav{
         display: flex;
         width: 90%;
@@ -144,7 +144,7 @@ li{
         padding: 20px;
         border-radius: 13px;
         margin-left: -10px;
-        &:hover{
+        &:hover{/*hover changement couleur linear gradient*/
             background-color: lighten($primary-color, $amount: 34%);
             .btn__nav--icon{color:$primary-color;}
         }
