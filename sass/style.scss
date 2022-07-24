@@ -3,6 +3,11 @@
 
 *{
     font-family: 'Roboto', sans-serif;
+
+}
+body{
+    max-width: 1600px;
+    margin: auto;
 }
 a, a:visited{
     text-decoration: none;
@@ -125,19 +130,16 @@ h2{/*titre fonctionnement et restaurants*/
     justify-content: center;
     align-items: center;
 }
-
 li{ 
     @include margin-h2;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     margin-left: 0px;
-    max-width: 450px;
-    min-width: 350px;
-    font-weight: 16px;;
+    width: 350px;
     .btn__nav{
         display: flex;
-        width: 90%;
+        width: 100%;
         background-color:$backgound-color;
         box-shadow:1px 3px 5px $header;
         border: none;
@@ -216,7 +218,8 @@ h3{/*noms des restaurants*/
     object-position: bottom;
 }
 .img__restaurant--img--la-note-enchantee{
-    object-position: 50% 60%;}
+    object-position: 50% 60%;
+}
 .name__restaurant{
     display:flex;
     flex-direction: column;

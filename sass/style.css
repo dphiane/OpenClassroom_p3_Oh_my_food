@@ -47,6 +47,11 @@ td, th {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  max-width: 1600px;
+  margin: auto;
+}
+
 a, a:visited {
   text-decoration: none;
   color: inherit;
@@ -208,13 +213,11 @@ li {
   align-items: center;
   margin-bottom: 20px;
   margin-left: 0px;
-  max-width: 450px;
-  min-width: 350px;
-  font-weight: 16px;
+  width: 350px;
 }
 li .btn__nav {
   display: flex;
-  width: 90%;
+  width: 100%;
   background-color: #f6f6f6;
   box-shadow: 1px 3px 5px #dddddd;
   border: none;

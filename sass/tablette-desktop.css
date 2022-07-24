@@ -13,13 +13,19 @@ nav {
   justify-content: center;
   align-items: center;
 }
+@media all and (min-width:1130px){
+  ul{
+    display: flex;
+  }
+  nav ul li {
+    margin: 3%;
+  }
+}
+
 nav h2 {
   margin: 10px;
 }
-nav ul li {
-  margin: 15px;
-  width: 300px;
-}
+
 
 h2 {
   text-align: center;
