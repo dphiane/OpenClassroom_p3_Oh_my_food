@@ -36,14 +36,16 @@ h2 {
 
 section {
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .section__restaurant {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   margin-top: 10px;
+  
 }
 
 .card__restaurant {
