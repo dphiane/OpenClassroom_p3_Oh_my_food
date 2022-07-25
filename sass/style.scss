@@ -1,1 +1,301 @@
 @import "libs/reset.scss";
+@import "libs/utils.scss";
+
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
+}
+a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*loader spinner*/
+.loader__wrapper{
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+    inset: 0;
+    opacity: 0.8;
+    background-color: $header;
+    animation: disappear 1s forwards;
+    animation-delay: 1s;
+}
+
+.loader {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    border:solid 5px;
+    border-radius: 50%;
+    border-left: none;
+    border-right: none;
+    animation: loading-spinner 1.5s linear forwards;
+}
+
+@keyframes disappear {
+    to{
+        opacity: 0;
+        z-index: -2;
+        }
+    }
+@keyframes loading-spinner {
+    0%{
+        transform: rotate(0deg);
+        border-top-color:$primary-color;
+        border-bottom-color: $secondary-color;
+    }     
+    100%{
+        transform: rotate(360deg) scale(0);
+        border-top-color:$primary-color;
+        border-bottom-color: $secondary-color;
+    }
+}
+
+/*header */
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+header{
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+/*bouton localisation*/
+.btn__location{
+    width: 100%;
+    height: 60px;
+    margin-top: 15px;
+    font-weight: bold;
+    -webkit-box-shadow: inset 0px 8px 3px -8px rgba(0,0,0,0.38); 
+    box-shadow: inset 0px 8px 5px -9px rgba(0,0,0,0.38);
+    background:darken($backgound-color, $amount: 5%);
+    border: none;
+    .localisation{
+        margin-right: 20px;}
+}
+
+.header__explor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:$backgound-color;
+}
+/*titre */
+h1{ 
+    @include font-size-bold;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    @include margin-l-r;
+}
+/*bouton explorer nos restaurants*/
+button{
+    font-weight: 500;
+}
+.header__explor--p{ 
+    text-align: center;
+    font-weight: $font-weight-300;
+    padding: 0px 15px 30px 15px;
+}
+
+.header__explor--btn{
+    border-radius: 30px;
+    padding: 15px 25px 15px 25px;
+    color: white;
+    @include linear-gradient;
+    border: none;
+    margin-bottom: 25%;
+    &:hover{
+        @include box-shadow-btn;
+    }
+}
+h2{/*titre fonctionnement et restaurants*/
+    margin-top: 10%;
+    margin-left: 5%; 
+}
+/*navigation et choix*/
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+li{ 
+    @include margin-h2;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    width: 350px;
+    .btn__nav{
+        display: flex;
+        width: 100%;
+        background-color:$backgound-color;
+        box-shadow:1px 3px 5px $header;
+        border: none;
+        padding: 20px;
+        border-radius: 13px;
+        margin-left: -10px;
+        &:hover{/*hover changement couleur linear gradient*/
+            background-color: lighten($primary-color, $amount: 34%);
+            .btn__nav--icon{color:$primary-color;}
+        }
+    }
+}
+.numbers__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: white;
+    width: 20px;
+    height: 20px;
+
+}
+.btn__nav--icon{
+    margin-left:10px;
+    margin-right: 20px;
+    color:darken($backgound-color, $amount: 40%);
+}
+/*section carte des restaurants*/
+section{
+    background-color: $backgound-color;
+    margin-top: 15%;
+    padding-bottom: 10%;
+    width: 100%;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+.section__restaurant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{/*noms des restaurants*/
+    font-size:$font-size;
+}
+/*carte et images des restaurants*/
+.card__restaurant{
+    margin: 5%;
+    width: 90%;
+    max-width: 400px;
+    min-width: 350px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+    @include box-shadow-black;
+    &:hover{
+        @include box-shadow-card;
+    }
+}
+
+.img__restaurant{
+    height: 180px;
+    overflow: hidden;
+}
+
+.img__restaurant--img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.img__restaurant--img--la-note-enchantee{
+    object-position: 50% 60%;
+}
+.name__restaurant{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 15px;
+    p{font-weight: $font-weight-300;}}
+
+/*logo nouveau sur les cartes des restaurants*/
+.nouveau{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: 80px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: darken($color: $tertiary-color, $amount: 40);
+    background-color: $tertiary-color;
+}
+/*bouton en coeur & hover linear gradient*/
+.btn__heart{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    bottom: 15px;
+    right: 20px;
+
+}
+.heart__fill{
+    font-size: 25px;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    @include linear-gradient;
+    transform: scale(1.1);
+    transition: all 2s;
+    &:hover{
+        opacity: 1;
+        z-index: 1;
+    }
+} 
+.heart__empty{
+    font-size: 25px;
+    position: absolute;
+    &:hover{
+        opacity: 0;
+        z-index: 0;
+    }
+}
+    /*Footer */
+footer{
+    background-color: $footer;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    ul li{
+        margin: 15px;}
+}
+
+.logo__bottom{
+    margin:15px 0px 5px 15px;
+    font-family: 'Shrikhand', cursive;}
+
+.icon__footer{
+    margin-right: 10px;}
+
+.icon__footer--2{
+    margin-right: 5px;}

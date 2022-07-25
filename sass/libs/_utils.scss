@@ -1,0 +1,44 @@
+$footer:#353535;
+$header:#dddddd;
+$backgound-color:#f6f6f6;
+$primary-color:#9356dc;
+$secondary-color:#ff79da;
+$tertiary-color:#99e2d0;
+
+$font-size:18px;
+$font-weight-300:300;
+$font-size-menu:14px;
+
+@mixin font-size-bold{
+    font-size: 24px;
+    font-weight:500;}
+
+@mixin margin-l-r {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+@mixin margin-h2 {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+@mixin box-shadow{
+    box-shadow:0px 2px 5px $secondary-color;}
+
+@mixin linear-gradient {background-image: linear-gradient(180deg, rgba(236,114,218,1) 14%, rgba(147,86,220,1) 82%);
+}
+
+@mixin box-shadow-black{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 2px;
+}
+
+@mixin box-shadow-btn {
+    box-shadow: #353535 0px 3px 3px;
+    opacity: 0.9;
+}
+
+@mixin box-shadow-card {
+    box-shadow: #353535 0px 10px 10px;
+    transition: all 0.5s;
+}
