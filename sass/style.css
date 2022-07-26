@@ -59,6 +59,10 @@ a, a:visited {
 .loader__wrapper {
   position: fixed;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   inset: 0;
   opacity: 0.8;
@@ -73,8 +77,6 @@ a, a:visited {
   width: 120px;
   height: 120px;
   position: absolute;
-  left: 45%;
-  top: 45%;
   border: solid 5px;
   border-radius: 50%;
   border-left: none;
@@ -357,7 +359,7 @@ h3 { /*noms des restaurants*/
   -webkit-background-clip: text;
   background-image: linear-gradient(180deg, rgb(236, 114, 218) 14%, rgb(147, 86, 220) 82%);
   transform: scale(1.1);
-  transition: all 2s;
+  transition: all 1s;
 }
 .heart__fill:hover {
   opacity: 1;

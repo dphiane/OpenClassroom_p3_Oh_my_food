@@ -108,7 +108,7 @@ nav {
   -webkit-background-clip: text;
   background-image: linear-gradient(180deg, rgb(236, 114, 218) 14%, rgb(147, 86, 220) 82%);
   transform: scale(1.1);
-  transition: all 2s;
+  transition: all 1s;
 }
 .heart__fill:hover {
   opacity: 1;
@@ -230,33 +230,33 @@ p {
 }
 
 .box__food--4 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .box__food--5 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .box__food--6 {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .box__food--7 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .box__food--8 {
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .box__food--9 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .box__food--10 {
