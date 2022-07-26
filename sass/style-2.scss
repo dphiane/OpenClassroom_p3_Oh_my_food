@@ -1,10 +1,12 @@
 @import "libs/reset.scss";
 @import "libs/utils.scss";
 
-*{  box-sizing: border-box;
+body{
     font-family: 'Roboto', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
 }
-
 a, a:visited{
     text-decoration: none;
     color: inherit;
