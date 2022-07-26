@@ -57,7 +57,7 @@ nav{
     -webkit-background-clip: text;
     @include linear-gradient;
     transform: scale(1.1);
-    transition: all 2s;
+    transition: all 1s;
     &:hover{
         opacity: 1;
         z-index: 1;
@@ -147,12 +147,12 @@ p{
 .box__food--1{animation-delay: 0s;}
 .box__food--2{animation-delay: 0.5s;}
 .box__food--3{animation-delay: 1s;}
-.box__food--4{animation-delay: 1.5s;}
-.box__food--5{animation-delay: 2s;}
-.box__food--6{animation-delay: 2.5s;}
-.box__food--7{animation-delay: 3s;}
-.box__food--8{animation-delay: 3.5s;}
-.box__food--9{animation-delay: 4s;}
+.box__food--4{animation-delay: 0s;}
+.box__food--5{animation-delay: 0.5s;}
+.box__food--6{animation-delay: 1s;}
+.box__food--7{animation-delay: 0s;}
+.box__food--8{animation-delay: 0.5s;}
+.box__food--9{animation-delay: 1s;}
 .box__food--10{animation-delay: 1.5s;}
 
 .box__food:hover .checkbox, .box__food:active .checkbox{
